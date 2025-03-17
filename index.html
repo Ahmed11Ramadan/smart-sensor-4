@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Smart Sensor</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Start the Smart sensor  -->
+    <div class="smart-sensor">
+        <div class="overlye"></div>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/images.jpeg" alt="">
+                </div>
+                <ul class="links">
+                    <li><a class="active">Home</a></li>
+                    <li><a data-section=".about">About</a></li>
+                    <li><a data-section=".servers">Servers</a></li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <h2> <span>Smart</span> Irrigation System</h2>
+                <p>A smart irrigation system is a modern technology that utilizes sensors, artificial intelligence, and advanced innovations to achieve greater water efficiency and vegetable productivity. The system collects data such as soil maturity, temperature, and water level,
+                then determines the exact amount of water needed for each plant at the appropriate time.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End the Smart sensor  -->
+<!-- Start About -->
+<div class="about">
+    <h1>ABOUT US</h1>
+    <div class="container">
+        <div class="box">
+            <div class="images">
+                <img src="images/أدوات_ترشيد_استهلاك_الماء.jpg" alt="">
+                </div>
+                <p>Water conservation – limit waste by providing water only as needed by the plant.</p>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="images/images (2).jpeg" alt="">
+                </div>
+                <p>Increase production efficiency – improves plant growth and increases yield with higher quality.</p>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="images/3c7073ee-ee98-4207-a74d-2dc51ef69e6f.webp" alt="">
+                </div>
+                <p>Save effort and time – it works automatically without the need for constant monitoring.</p>
+            </div>
+            <div class="box">
+                    <div class="images">
+                            <img src="images/images (3).jpeg" alt="">
+                </div>
+                <p>Weather Tolerant – Adapts to climate changes to avoid over- or under-watering.</p>
+            </div>
+            <div class="box">
+                                <div class="images">
+                        <img src="images/images (4).jpeg" alt="">
+                    </div>
+                    <p>Reduce costs – Reduces water and energy bills used in irrigation.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+<!-- Start Servers -->
+<div class="servers">
+    <h1>SEVRERS</h1>
+    <div class="container">
+    <div class="dashboard-card">
+            <div class="status-indicators">
+                <div class="status-item">
+                    <p>Soil Moisture</p>
+                    <div id="moisture" class="value">--%</div>
+                </div>
+                <div class="status-item">
+                    <p>Temperature</p>
+                    <div id="temperature" class="value">--°C</div>
+                </div>
+                <div class="status-item">
+                    <p>Humidity</p>
+                    <div id="humidity" class="value">--%</div>
+                </div>
+                <div class="status-item">
+                    <p>Pump Status</p>
+                    <div id="irrigation">--</div>
+                </div>
+            </div>
+            <div>
+                <button onclick="controlPump('on')">🚰 Start Irrigation</button>
+                <button onclick="controlPump('off')">⏹ Stop Irrigation</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="moistureChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="tempChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="humidityChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">Created By Al-Qaws Group</footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
