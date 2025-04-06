@@ -119,6 +119,7 @@ body {
     color: #ccc;
     width: 600px;
     display: inline-block;
+    margin: 25px auto;
 }
 
 @media (max-width:767px) {
