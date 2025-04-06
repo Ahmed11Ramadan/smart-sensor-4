@@ -86,7 +86,7 @@ body {
 
 @media (max-width:480px) {
 .smart-sensor .header .links li {
-    display: block;
+    padding: 5px;
 
 }
 }
@@ -123,15 +123,10 @@ body {
 
 @media (max-width:767px) {
     .smart-sensor .text p {
-        width: 450px;
+        width: 100%;
     }
 }
-@media (max-width:480px) {
-    .smart-sensor .text p {
-        width: 400px;
-        margin-top: 20px;
-    
-    }}
+
 /* start About */
 .about{
     padding-top: 50px;
