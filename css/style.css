@@ -83,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-@media (max-width:480px) {
+@media (max-width:767px) {
 .smart-sensor .header .links li {
     padding: 5px;
 
